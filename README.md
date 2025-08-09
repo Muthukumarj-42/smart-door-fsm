@@ -5,8 +5,6 @@ The system simulates RFID-based authentication using slide switches and push but
 
 ---
 
-# 🔐 Smart Door Access System (FSM on ZedBoard)
-
 ## 📌 Overview
 This project implements a **Smart Door Access System** using **Finite State Machine (FSM)** design in **Verilog** on the **Xilinx Zynq-7000 (ZedBoard)** FPGA.  
 The system uses **8 slide switches** to simulate RFID input, **one push button** to submit the ID, and **another push button** for reset.  
@@ -25,7 +23,7 @@ It checks the entered RFID against two valid IDs and outputs access status throu
 ---
 
 ## 🛠 Hardware Requirements
-- **Xilinx Zynq-7000 ZedBoard (Zynq-7020 SoC)**
+- **Xilinx Zynq-7000 ZedBoard (Zynq-7000 ZC702)**
 - **8 Slide Switches** → Simulated RFID input
 - **Push Button 1** → Submit RFID
 - **Push Button 2** → Reset
