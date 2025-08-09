@@ -5,8 +5,6 @@ The system simulates RFID-based authentication using slide switches and push but
 
 ---
 
----
-
 # 🔐 Smart Door Access System (FSM on ZedBoard)
 
 ## 📌 Overview
@@ -46,6 +44,8 @@ It checks the entered RFID against two valid IDs and outputs access status throu
 
 ---
 
-## 📂 File Structure
+## Waveform
+
+![image ](https://github.com/Muthukumarj-42/smart-door-fsm/blob/d34c248c3e0a9bc855ed3aaa3d299cf9988a8627/Images/FSM-GRAPH.jpg)
 
 
