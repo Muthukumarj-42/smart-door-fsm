@@ -14,7 +14,7 @@ It checks the entered RFID against two valid IDs and outputs access status throu
 
 ## 🎯 Features
 - **FSM-based design** for clear state transitions.
-- **Two valid RFID IDs** (`8'h33` and `8'hA1`).
+- **Two valid RFID IDs** (`8'h33` and `8'ha1`).
 - **Access Granted/Denied** indicators.
 - **Door Unlock** signal for successful entries.
 - **Automatic return to IDLE state** after each attempt.
@@ -59,8 +59,8 @@ It checks the entered RFID against two valid IDs and outputs access status throu
               CHECK = 2'b01,
               ACCESS_GRANTED = 2'b10,
               ACCESS_DENIED = 2'b11;
-    parameter VALID1 = 8'h21,
-              VALID2 = 8'hd3;
+    parameter VALID1 = 8'h33,
+              VALID2 = 8'ha1;
     reg [1:0] current_state, next_state;
     reg [7:0] rfid_reg;
     always @(posedge clk or posedge rst) begin
@@ -164,4 +164,22 @@ endmodule</pre>
 
 ![image ](https://github.com/Muthukumarj-42/smart-door-fsm/blob/d34c248c3e0a9bc855ed3aaa3d299cf9988a8627/Images/FSM-GRAPH.jpg)
 
+---
+## Timing summary
+![timing](https://github.com/Muthukumarj-42/smart-door-fsm/blob/c5dddbb0f7fadac5d7229c7e8307aef929357bbe/Images/FSM-TIMING.jpg)
+
+---
+## Utilization and power
+![power](https://github.com/Muthukumarj-42/smart-door-fsm/blob/c5dddbb0f7fadac5d7229c7e8307aef929357bbe/Images/FSM-POWER.jpg)
+
+---
+## Schematic
+![Schematic](https://github.com/Muthukumarj-42/smart-door-fsm/blob/c5dddbb0f7fadac5d7229c7e8307aef929357bbe/Images/FSM-SCHEMATIC.jpg)
+
+---
+## Contributors
+
+[MUTHU KUMAR J](https://github.com/Muthukumarj-42)
+
+[VISHWA V](https://github.com/Vishwav24)
 
